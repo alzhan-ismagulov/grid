@@ -1,0 +1,52 @@
+.skills{
+  background-color: $second;
+}
+.skills__wrap{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+}
+
+.skills__left{
+  flex-basis: 280px; //ограничивает ширину левого блока
+  margin-right: 115px; //отступ справа до правой секции
+}
+
+.skills__right{
+  flex-grow: 1;//занимает всё доступное пространство справа
+}
+
+.skills__title{
+  font-size: 30px;
+  font-family: "Raleway";
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 25px 0;
+  position: relative;
+
+  &::before{
+    content: '';
+    left: 0;
+    top: -25px;
+    width: 70px;
+    height: 2px;
+    background-color: $white;
+    position: absolute;
+  }
+}
+
+.skills__text{
+  font-size: 14px;
+  font-family: "Raleway";
+  color: $white;
+  line-height: 1.429;
+  margin: 20px 0;
+}
+
+.skills__button{
+  @include button($primary){
+    margin-top: 50px;
+  };
+}
