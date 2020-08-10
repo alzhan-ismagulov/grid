@@ -198,6 +198,7 @@ $descriptionColor: #959595;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     fill: $white;
     width: 15px;
     height: 15px;
